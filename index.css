@@ -1,0 +1,54 @@
+body {
+  background-color: lightgray;
+}
+
+header > img {
+  height: auto;
+  width: 15%;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: 15%;
+}
+
+nav {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > img {
+  width: 150px;
+  height: 150px;
+}
+
+main {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 320px) {
+  nav {
+    display: none;
+  }
+
+  #hamburger-button {
+    display: initial;
+    border-radius: 0;
+  }
+
+  main > img {
+    width: 75px;
+    height: 75px;
+  }
+}
